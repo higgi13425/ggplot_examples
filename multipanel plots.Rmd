@@ -1,6 +1,10 @@
 ---
 title: "Multipanel_with_Tables"
-output: github_document
+output: 
+  github_document:
+    toc: true
+    toc_depth: 2
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -158,3 +162,38 @@ p2 <- ggarrange(density.p, stable.p, text.p,
                 heights = c(1, 0.5, 0.3))
 ggarrange(p1, p2, ncol = 2, nrow = 1)
 ```
+
+# With patchwork
+
+details here
+https://www.datanovia.com/en/blog/ggplot-multiple-plots-made-ridiculuous-simple-using-patchwork-r-package/
+     
+and
+     
+https://gotellilab.github.io/GotelliLabMeetingHacks/NickGotelli/ggplotPatchwork.html
+
+```{r}
+library(patchwork)
+(density.p + bxp) / dp
+```
+
+```{r}
+sp + dp + plot_layout(ncol= 2, width = c(3,1))
+```
+
+# With cowplot
+details here
+https://wilkelab.org/cowplot/articles/plot_grid.html
+
+https://datascienceplus.com/how-to-combine-multiple-ggplot-plots-to-make-publication-ready-plots/
+
+
+
+```{r}
+library(cowplot)
+plot_grid(density.p, bxp, labels = c('A', 'B'),
+          label_size = 14)
+
+
+```
+

@@ -1,6 +1,17 @@
 Multipanel\_with\_Tables
 ================
 
+  - [reference source](#reference-source)
+  - [Create example plots](#create-example-plots)
+  - [Survival example plots](#survival-example-plots)
+  - [Arrange survival plot with
+    table](#arrange-survival-plot-with-table)
+  - [Arrange with Table](#arrange-with-table)
+  - [Table inside of plot](#table-inside-of-plot)
+  - [add boxplot to a ggplot](#add-boxplot-to-a-ggplot)
+  - [Background image in a ggplot](#background-image-in-a-ggplot)
+  - [Nested layout](#nested-layout)
+
 ### reference source
 
 <http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/81-ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page/>
